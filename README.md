@@ -23,9 +23,9 @@ de las librerias se puede realizar directamente como se muestra a continuación:
 pip install --upgrade pip
 pip install tensorflow
 ```
-#### Instalación de [OpenCV](https://opencv.org/)
+#### Instalación de [OpenCV](https://pypi.org/project/opencv-python/)
 ```sh
-pip install cv2
+pip install opencv-python
 ```
 #### Instalación de [Numpy](https://numpy.org/install/)
 ```sh
