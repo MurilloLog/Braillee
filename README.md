@@ -92,3 +92,7 @@ Con los siguientes comandos será posible manipular cada operación disponible:
 ### Tabla de resultados
 
 ![resultados](https://user-images.githubusercontent.com/27164570/102543897-99c55900-4079-11eb-9b18-55831c4d85be.jpg "Ponderación global")
+
+## Lista de caracteres disponibles en el modelo
+
+![simbologia](https://user-images.githubusercontent.com/27164570/102549815-5fac8500-4082-11eb-8675-35c7e6cd1fbc.jpg "Codigos que se pueden reconocer")
