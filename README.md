@@ -52,8 +52,6 @@ dedicadas al proceso de entrenamiento y el resto al proceso de evaluación.
 Las imagenes se encuentran debidamente reticuladas para enfatizar cada una de las regiones a introducir los signos 
 generadores por lo que se espera sea mas sencillo aislar cada punto generador.
 
-![alt text](assets/@cuadricula.JPG "Cuadricula en las imagenes")
-
 ## Reconocimiento de imagen
 Las imagenes presentes en el dataset, tanto las de entrenamiento como las de validación, son exclusivas para el proceso
 de entrenamiento. Si se desea predecir una imagen externa al dataset es indispensable ejecutar el script **prediction.py**
@@ -64,7 +62,8 @@ Ejecutar este script se realiza de igual forma que cualquier otro script en Pyth
 python prediction.py
 ```
 
-![alt text](assets/@sketchbook.JPG "Aplicación de dibujo Braille")
+![sketchbook](https://user-images.githubusercontent.com/27164570/102543308-b6ad5c80-4078-11eb-955e-7e990548b3e9.JPG "Sketchbook")
+
 
 ## Sketchbook
 Sketchbook funciona por medio de metacomandos y los eventos del mouse. Para manipular esta aplicación y obtener un resultado 
@@ -84,11 +83,12 @@ Con los siguientes comandos será posible manipular cada operación disponible:
 > Para la ejecución de pruebas se ha utilizado el IDE Spyder 3.3.6 con Python 3.7
 ### Reconocimiento acertado
 
-![alt text](assets/@m_correcta.JPG "Correcto")
+![m_correcta](https://user-images.githubusercontent.com/27164570/102543415-e6f4fb00-4078-11eb-8624-93d20b409656.JPG "Correcto")
 
 ### Reconocimiento erroneo
-![alt text](assets/@m_incorrecta.JPG "Incorrecto")
+
+![m_incorrecta](https://user-images.githubusercontent.com/27164570/102543468-f6744400-4078-11eb-94a0-56222d4ca189.JPG "Incorrecto")
 
 ### Tabla de resultados
 
-![alt text](assets/@ponderacion_global.JPG "Ponderación global")
+![resultados](https://user-images.githubusercontent.com/27164570/102543897-99c55900-4079-11eb-9b18-55831c4d85be.jpg "Ponderación global")
