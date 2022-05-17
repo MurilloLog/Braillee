@@ -28,7 +28,10 @@
 import cv2
 import numpy as np
 import csv
-from tensorflow.python.keras.preprocessing.image import load_img, img_to_array
+    # Descomente la siguiente linea si esta utilizando la version 2.0 de Tensorflow
+#from tensorflow.python.keras.preprocessing.image import load_img, img_to_array
+    # Descomente la siguiente linea si esta utilizando Tensorflow en una version superior a 2.0 
+from tensorflow.keras.preprocessing.image import load_img, img_to_array
 from tensorflow.python.keras.models import load_model
 
 # Variables necesarias para el sketch
@@ -38,6 +41,7 @@ pencilSize = 30
 pencilColor = (0,0,0)
 sizeLine = 1
 lineColor = (0,0,0)
+appName = 'Braill-E'
 
 # Variables necesarias para configurar la carga del modelo a utilizar
 longitud, altura = 53, 53
@@ -50,7 +54,7 @@ cnn.load_weights(pesos_modelo)  # Carga de los pesos de la red
 # Funcion para generar el sketch
 def createSketch(length, width, dimension):
     sketch = 255*np.ones((length, width, dimension), dtype=np.uint8)
-    cv2.namedWindow('Sketchbook')
+    cv2.namedWindow(appName)
     return sketch
 
 # Destruir el sketch al cerrar la aplicacion
@@ -117,10 +121,10 @@ def add_char(strg):
     ##################### MAIN #####################
 sketch = createSketch(length, width, dimension)
 sketchDiv(sketch, length, width, lineColor, sizeLine)
-cv2.setMouseCallback('Sketchbook', sketchDraw)
+cv2.setMouseCallback(appName, sketchDraw)
 
 while True:
-    cv2.imshow('Sketchbook', sketch)   
+    cv2.imshow(appName, sketch)   
     interrupt = cv2.waitKey(1) & 0xFF
     if interrupt == ord('c'): # Limpiar el contenido de la imagen
         sketch = cleanSketch(sketch)
